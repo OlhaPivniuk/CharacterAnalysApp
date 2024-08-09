@@ -1,4 +1,3 @@
-using Xunit;
 using CharacterAnalysApp;
 
 namespace CharacterAnalysAppTests;
@@ -56,7 +55,7 @@ public class StringAnalyzerTests
     [InlineData("9a8b777777", 6)] 
     [InlineData("123123123123", 1)] 
     [InlineData("000111100011110000", 4)]
-    [InlineData("1 2 3 4 5", 1)] // Digits with spaces
+    [InlineData("1 2 3 4 5", 1)] 
     public void MaxNumberConsecutiveIdenticalDigits_VariousInputs_ReturnsCorrectMaxLength(string input, int expected)
     {
         // Act
